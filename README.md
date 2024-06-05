@@ -51,6 +51,7 @@ For this activity, llama3:8b will be used for augmenting the output whereas nomi
 Open langflow (http://127.0.0.1:7860/flows).
 Click on New Project > Import from JSON > Upload rag_pdf_qa_mongodb_atlas.json
 
+The flow would look like below:
 ![alt text](https://github.com/aravindar37/PDF-QA-MongoDB-Atlas/blob/main/langflow.png?raw=true)
 
 # Step 9
