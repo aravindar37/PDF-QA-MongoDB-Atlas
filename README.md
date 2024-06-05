@@ -8,6 +8,7 @@ Ensure that $PATH is updated and shows python bin path
 Verify the Python version
 `python --version`
 
+Optionally you can install Anaconda(https://www.anaconda.com/download/success) to visually manage environments, dependencies etc. Conda also comes preloaded with lot of packages for data engineering.
 
 # Step 2
 
