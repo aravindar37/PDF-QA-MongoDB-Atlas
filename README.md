@@ -63,6 +63,8 @@ Click on New Project > Import from JSON > Upload rag_pdf_qa_mongodb_atlas.json
 The flow would look like below:
 ![alt text](https://github.com/aravindar37/PDF-QA-MongoDB-Atlas/blob/main/langflow.png?raw=true)
 
+Update the pdf file path in PyPDFLoader flow element.
+
 Update the cluster URI in MongoDB Atlas flow element.
 
 Update the connection string, database and collection name in MongoDBChatMessageHistory flow element.
@@ -72,3 +74,4 @@ Update the connection string, database and collection name in MongoDBChatMessage
 Execute the Langflow flow by clicking on the lighting button on the left bottom
 Once execution is complete, Click on the Chat icon on the left bottom corner to bring up the chatbot and chat.
 
+Note: The PyPDFLoader can be replaced by FileLoader, CSFLoader, DirectoryLoader, SlackDirectoryLoader etc. to load documents from different sources.
