@@ -48,21 +48,24 @@ For this activity, llama3:8b will be used for augmenting the output whereas nomi
 
 # Step 8
 
+Create a MongoDB Atlas cluster.
+
+Create a database 'vector_search' in the cluster and create a collection 'pdf_text'.
+Open the search tab and create an index 'pdf' with following description: 
+` {"fields":[{"numDimensions":768,"path":"embedding","similarity":"cosine","type": "vector" }]}`
+Create a database and collection for storing chat message history.
+
+# Step 9
+
 Open langflow (http://127.0.0.1:7860/flows).
 Click on New Project > Import from JSON > Upload rag_pdf_qa_mongodb_atlas.json
 
 The flow would look like below:
 ![alt text](https://github.com/aravindar37/PDF-QA-MongoDB-Atlas/blob/main/langflow.png?raw=true)
 
-# Step 9
+Update the cluster URI in MongoDB Atlas flow element.
 
-Create a MongoDB Atlas cluster. If cluster already exists, update the cluster URI in MongoDB Atlas flow element.
-
-Create a database 'vector_search' in the cluster and create a collection 'pdf_text'.
-Open the search tab and create an index 'pdf' with following description: 
-` {"fields":[{"numDimensions":768,"path":"embedding","similarity":"cosine","type": "vector" }]}`
-
-Update the database and collection name in MongoDBChatMessageHistory element.
+Update the connection string, database and collection name in MongoDBChatMessageHistory flow element.
 
 # Step 10
 
