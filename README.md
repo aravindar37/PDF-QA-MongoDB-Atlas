@@ -27,7 +27,7 @@ Install langflow and pymongo(if not present) in the activated virtual environmen
 # Step 4
 
 Open a new terminal and run Langflow:
-`python -m langflow`
+`python -m langflow run`
 
 # Step 5
 
